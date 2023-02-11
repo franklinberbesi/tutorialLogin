@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 30px 0;
+    color: #48e;
+}
+
+/* estilos para el mensaje */
+
+.msg__error{
+    display: none;
+}
+
+.msg__error-activo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+  background-color: rgba(255, 0, 0, 0.649);
+  border-radius: 10px;
+  width: max-content;
+}
+
+.msg__error-span{
+    color: #fff;
+}
+
+.span-cerrar{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* ------------ */
+
+/*
+estilos para el formulario...
+*/
+
+.content-form{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    outline: none; 
+    padding: 12px;
+    border-radius: 10px;
+    width: 450px;
+    height: max-content;
+    justify-content: space-around;
+    margin: 30px auto 100px auto;
+}
+
+form input{
+    width: 98%;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+
+form label{
+    font-size: 20px;
+    color: #48e;
+}
+
+form input::placeholder{
+ font-size: 15px;
+}
+
+form .btn__submit{
+    display: flex;
+    justify-content: center;
+}
+
+form button{
+    width: 70%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #000;
+    font-size: 15px;
+    transition: all .5s;
+    color: #fff;
+}
+
+form button:hover{
+    color:#fff;
+    background-color: #3a3535;
+    cursor: pointer;
+}
+
+form .grupo__input{
+    margin: 10px 0;
+}
+
+.grupo__input input{
+ border: 1px solid #000;
+}
+
+.grupo__input p{
+    display: none;
+    margin-bottom: 10px;
+   }
+
+   @media only screen and (max-width: 525px){
+    form{
+        width: 250px;
+    }
+   }
+
+
+   /* -------- */
+
+   /* estilos para la validación del formulario Login */
+
+.grupo__input-incorrecto p{
+ color: #f00;
+ display: block;
+}
+
+.grupo__input-incorrecto label{
+   color: #f00;
+}
+
+.grupo__input-incorrecto input{
+    border: 2px solid #f00;
+}
+
+.grupo__input-correcto p{
+    display: none;
+   }
+
+   .grupo__input-correcto label{
+     color: rgb(0, 255, 13);
+   }
+
+   .grupo__input-correcto input{
+    border: 2px solid rgb(0, 255, 13);
+   }
+   
+
+
+/* ------- */
+
+/* parte Home */
+
+header{
+    background-color: rgb(89, 148, 237);
+    top: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+header ul li{
+    color: aqua;
+}
+
+header ul li:hover{
+    color: red;
+}
+
+header ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+header h1{
+    color: #fff;
+    margin: 0;
+}
+
+.content-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.content-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-img img{
+    width: 300px;
+}
+
+/* --- */
+
+
+/* footer */
+
+footer{
+    background-color: #3a3535;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h3{
+    color: #fff;
+}
+
+/* ---- */
